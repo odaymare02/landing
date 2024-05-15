@@ -1,0 +1,56 @@
+@import url("../css/public.css");
+.head {
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 1.647px 8.237px 0px rgba(0, 0, 0, 0.1);
+  padding: 20px 0;
+}
+
+.head .logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.head .logo img {
+  width: 27px;
+}
+.head .logo a {
+  color: var(--maincolor);
+}
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.head .nav a {
+  color: var(--subcolor);
+}
+.head .nav .activ {
+  font-weight: 900;
+}
+.auth {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.head .auth .login {
+  border-radius: 4.119px;
+  border: 0.412px solid #545be8;
+  padding: 6px 30px;
+  color: #545be8;
+}
+.head .auth .reges {
+  border-radius: 4.119px;
+  padding: 6px 30px;
+  background-color: var(--maincolor);
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .nav {
+    display: none;
+  }
+}
