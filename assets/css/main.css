@@ -114,9 +114,17 @@
   flex-direction: column;
   gap: 10px;
 }
+.footer .footer-end .footer-item h2
+{
+  font-size: 15px;
+}
 .footer .footer-end .footer-item ul {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   gap: 10px;
+}
+.footer .footer-end .footer-item ul a
+{
+  font-size: 10px;
 }
