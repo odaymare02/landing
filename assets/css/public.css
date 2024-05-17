@@ -11,7 +11,7 @@
 .row/* this class using when i need to put the elemnt in flex */ {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 :root {
