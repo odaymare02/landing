@@ -4,8 +4,9 @@
   top: 0;
   box-shadow: 0px 1.647px 8.237px 0px rgba(0, 0, 0, 0.1);
   padding: 20px 0;
+  background-color: #fff;
+  z-index: 5;
 }
-
 .head .logo {
   display: flex;
   flex-wrap: wrap;
@@ -53,7 +54,92 @@
   .nav {
     display: none;
   }
+  
 }
+/*start testomonial*/
+.Testimonials
+{
+  text-align: center;
+  padding:40px 0 ;
+}
+.Testimonials h2
+{
+  margin-bottom: 40px;
+}
+.Testimonials .row
+{
+  gap: 40px;
+}
+.Testimonial
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: calc((100% - 40px) / 2 );
+  box-shadow: 0px 10px 8.237px 0px rgba(0, 0, 0, 0.4);
+  padding: 18px 16px;
+  position: relative;
+
+}
+.Testimonial::after
+{
+  content: "";
+  border-top: 30px solid #e0dfdf67;
+  border-right: 30px solid #e0dfdf67;
+  border-bottom: 30px solid transparent;
+  border-left: 30px solid transparent;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.Testimonial .user-info
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.Testimonial .user-info img
+{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+}
+.Testimonial .user-data
+{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+}
+.Testimonial .user-data span
+{
+  color: #969696;
+  font-size: 10px;
+  font-weight: 400;
+}
+.Testimonial .rating
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+
+}
+.Testimonial .rating img
+{
+  width: 20px;
+  height: 20px;
+}
+.Testimonial  p
+{
+  color: #646464;
+ 
+}
+
 .footer {
   background: #393e46;
   color: #fff;
