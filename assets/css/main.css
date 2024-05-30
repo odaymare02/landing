@@ -82,7 +82,7 @@
 .begin {
   padding: 40px 0;
   display: flex;
-  background: #fff;
+  background: #F5F5F5;
   flex-wrap: wrap;
   margin-top: 50px;
 }
@@ -131,65 +131,11 @@
 .begin-start .animatoin-blur span:nth-child(7) {
   --animation-delay: 1000ms;
 }
-.animatoin-blur span {
-  filter: blur(0px);
-  position: relative;
-  animation: blur 500ms forwards;
-  animation-delay: var(--animation-delay);
-}
-@keyframes blur {
-  0% {
-    filter: blur(40px);
-    opacity: 0;
-    bottom: -40px;
-  }
-  100% {
-    filter: blur(0px);
-    opacity: 1;
-    bottom: 0;
-  }
-}
+
 .begin-start h2 span:nth-child(5) {
   color: var(--maincolor);
 }
-.fade-up {
-  position: relative;
-  animation: fade-up 700ms forwards ease-out;
-  animation-delay: var(--animation-delay);
-  opacity: 0;
-  bottom: -80px;
-}
-@keyframes fade-up {
-  0% {
-    opacity: 0;
-    bottom: -80px;
-  }
-  60% {
-    opacity: 0.7;
-    bottom: 4px;
-  }
-  100% {
-    opacity: 1;
-    bottom: 0;
-  }
-}
-.fade-right {
-  position: relative;
-  animation: fade-right 700ms forwards ease-out;
-  animation-delay: var(--animation-delay);
-  opacity: 0;
-  right: -80px;
-}
-@keyframes fade-right {
-  0% {
-    opacity: 0;
-    right: -80px;
-  }
-  100% {
-    opacity: 1;
-    right: 0;
-  }
-}
+
 .begin-start .desc {
   color: #646464;
   font-size: 15px;
@@ -223,20 +169,16 @@
 }
 .begin-end img {
   border-radius: 5px 5px 50px 50px;
+  width: 100%;
 }
-/*
-.begin-start,.begin-end
-{
-  width: calc((100% - 30px) / 2 );
-}
-*/
 /*end begin*/
+
 /*Start giv*/
 .giv {
   padding: 40px 0;
   display: flex;
   flex-wrap: wrap;
-  background: #f5f5f5;
+  background: #fff;
   align-items: flex-start;
   justify-content: flex-start;
 }
@@ -244,7 +186,7 @@
 .giv .row {
   gap: 20px;
   align-items: flex-end;
-  padding: 200px 0 0 0;
+  padding: 40px 0;
 }
 .giv .giv-desc {
   display: flex;
@@ -293,6 +235,22 @@
 .giv-desc,
 .giv-info {
   width: calc((100% - 20px) / 5);
+}
+.giv .rows
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  color: #fff;
+  justify-content: flex-end;
+  
+}
+.giv .rows .left-row,.giv  .rows .right-row
+{
+  background-color: #f0c932;
+  border-radius: 50%;
+  width:25px;
+  height: 25px;
 }
 /*end giv*/
 /*start delcted course*/

@@ -30,3 +30,81 @@ a {
 ul {
   list-style-type: none;
 }
+/*animations*/
+.fade-up {
+  position: relative;
+  animation: fade-up 700ms forwards ease-out;
+  animation-delay: var(--animation-delay);
+  opacity: 0;
+  bottom: -80px;
+}
+.fade-down
+{
+  position: relative;
+  animation: fade-down 700ms forwards ease-out;
+  animation-delay: var(--animation-delay);
+  opacity: 0;
+  bottom: 80px;
+}
+@keyframes fade-down
+{
+  0%
+  {
+    opacity: 0;
+    bottom: 80px;
+  }
+  100%
+  {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    bottom: -80px;
+  }
+  60% {
+    opacity: 0.7;
+    bottom: 4px;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+.fade-right {
+  position: relative;
+  animation: fade-right 700ms forwards ease-out;
+  animation-delay: var(--animation-delay);
+  opacity: 0;
+  right: -80px;
+}
+@keyframes fade-right {
+  0% {
+    opacity: 0;
+    right: -80px;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
+  }
+}
+.animatoin-blur span {
+  filter: blur(0px);
+  position: relative;
+  animation: blur 500ms forwards;
+  animation-delay: var(--animation-delay);
+}
+@keyframes blur {
+  0% {
+    filter: blur(40px);
+    opacity: 0;
+    bottom: -40px;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+    bottom: 0;
+  }
+}
