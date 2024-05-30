@@ -19,6 +19,7 @@
   --subFont: "Inter", sans-serif;
   --maincolor: #545be8;
   --subcolor: #101928;
+  --animation-delay:400ms;
 }
 body {
   font-family: var(--mainFont);
